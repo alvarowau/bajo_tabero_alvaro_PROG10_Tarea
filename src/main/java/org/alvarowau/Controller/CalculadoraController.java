@@ -8,8 +8,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.alvarowau.util.Path;
 
 import java.awt.*;
@@ -34,7 +37,8 @@ public class CalculadoraController {
     private Button btnMinimizar;
     @FXML
     private Button btnCerrar;
-
+    @FXML
+    private AnchorPane panelMovilidad;
     @FXML
     private TextField display;
 
@@ -42,6 +46,21 @@ public class CalculadoraController {
     private boolean operacionesOn = true;
     private boolean hayQueBorrar = false;
     private boolean hayLetras = false;
+    private double xOffset = 0;
+    private double yOffset = 0;
+
+    @FXML
+    private void onMousePressed(MouseEvent event) {
+        xOffset = event.getSceneX();
+        yOffset = event.getSceneY();
+    }
+
+    @FXML
+    private void onMouseDragged(MouseEvent event) {
+        Stage stage = (Stage) panelMovilidad.getScene().getWindow();
+        stage.setX(event.getScreenX() - xOffset);
+        stage.setY(event.getScreenY() - yOffset);
+    }
 
     /**
      * Cierra la ventana de la aplicación.
@@ -132,7 +151,7 @@ public class CalculadoraController {
      */
     private List<String> obtenerElementos(String expresion) {
         // Dividir la expresión en partes utilizando los operadores como delimitadores
-        String[] partes = expresion.split("(?<=[-+X÷])|(?=[-+X÷])");
+        String[] partes = expresion.split("(?<=[-+x÷])|(?=[-+x÷])");
         // Convertir el array de partes en una lista y devolverla
         return new ArrayList<>(Arrays.asList(partes));
     }
@@ -213,7 +232,7 @@ public class CalculadoraController {
         double resultado = 0.0;
         // Realizar la operación correspondiente según el operador
         switch (operador) {
-            case "X":
+            case "x":
                 resultado = operand1 * operand2;
                 break;
             case "÷":
@@ -337,7 +356,7 @@ public class CalculadoraController {
                         operacion = "-";
                         break;
                     case "btnMultiply":
-                        operacion = "X";
+                        operacion = "x";
                         break;
                     case "btnEntre":
                         operacion = "÷";
@@ -367,11 +386,13 @@ public class CalculadoraController {
         if (hayLetras) {
             borrarDisplay();
             hayLetras = false;
+
         }
 
         // Si se debe borrar el contenido del display, lo borra
         if (hayQueBorrar) {
             display.setText("");
+            hayQueBorrar = false;
         }
 
         // Agrega el valor del botón presionado al display y actualiza las banderas
@@ -457,6 +478,7 @@ public class CalculadoraController {
             // Crear un nuevo Stage para la ventana de alerta y configurarlo
             Stage stage = new Stage();
             stage.setTitle(titulo);
+            stage.initStyle(StageStyle.UNDECORATED);
             stage.setScene(new Scene(root));
             stage.initModality(Modality.APPLICATION_MODAL); // La ventana es modal, bloquea otras ventanas
             stage.show();
@@ -466,5 +488,6 @@ public class CalculadoraController {
         }
     }
 
-    
+
+
 }
