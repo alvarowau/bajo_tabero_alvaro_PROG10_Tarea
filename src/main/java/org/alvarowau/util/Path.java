@@ -1,4 +1,4 @@
-package org.alvarowau;
+package org.alvarowau.util;
 
 public class Path {
 

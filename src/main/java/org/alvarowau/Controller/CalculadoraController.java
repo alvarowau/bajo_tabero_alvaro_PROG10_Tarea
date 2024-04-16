@@ -10,13 +10,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import org.alvarowau.Path;
+import org.alvarowau.util.Path;
 
 import java.awt.*;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -429,7 +428,7 @@ public class CalculadoraController {
     void visitarRepositorio(ActionEvent event) {
         try {
             // Abrir el enlace en el navegador web predeterminado
-            Desktop.getDesktop().browse(new URI("https://github.com/alvarowau/Caculadora"));
+            Desktop.getDesktop().browse(new URI("https://github.com/alvarowau/bajo_tabero_alvaro_PROG10_Tarea"));
         } catch (Exception e) {
             // Manejar cualquier excepción que pueda ocurrir al intentar abrir el enlace
             e.printStackTrace();
