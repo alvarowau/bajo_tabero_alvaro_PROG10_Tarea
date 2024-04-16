@@ -21,16 +21,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 36px;
+    color: #4CAF50; /* Verde */
 }
 
 h2 {
     font-size: 30px;
-    color: #008CBA; /* Azul */
+    color: #FF5733; /* Rojo */
 }
 
 h3 {
     font-size: 24px;
-    color: #4CAF50; /* Verde */
+    color: #1E90FF; /* Azul */
 }
 
 h4 {
@@ -39,13 +40,13 @@ h4 {
 }
 
 h5 {
-    font-size: 16px;
-    color: #FF5733; /* Rojo */
+    font-size: 18px;
+    color: #9932CC; /* Púrpura */
 }
 
 h6 {
-    font-size: 14px;
-    color: #9932CC; /* Púrpura */
+    font-size: 16px;
+    color: #FF1493; /* Rosa */
 }
 
 p {
