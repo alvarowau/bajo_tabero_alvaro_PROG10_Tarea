@@ -1,41 +1,47 @@
-/* Estilos para el fondo y el diseño general */
 .root {
-    -fx-background-color: #f5c2c2; /* Color de fondo */
+    -fx-background-color: #f5c2c2;
 }
 
-/* Estilos para el campo de texto */
+#btnCerrar {
+    -fx-background-color: transparent;
+}
+
+#btnCerrar:hover {
+    -fx-background-color: #cc0000;
+}
+
+
 #display {
-    -fx-font-size: 24px; /* Tamaño de fuente */
-    -fx-text-fill: #8b0000; /* Color del texto (rojo oscuro) */
-    -fx-background-color: #ff9999; /* Color de fondo (rojo claro) */
-    -fx-border-color: #cc0000; /* Color del borde (rojo medio) */
-    -fx-border-width: 1px; /* Ancho del borde */
-    -fx-padding: 10px; /* Espaciado interno */
-    -fx-pref-height: 60px; /* Altura preferida */
+    -fx-font-size: 24px;
+    -fx-text-fill: #8b0000;
+    -fx-background-color: #ff9999;
+    -fx-border-color: #cc0000;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+    -fx-pref-height: 60px;
 }
 
-/* Estilos para los botones */
+
 .button {
-    -fx-font-size: 18px; /* Tamaño de fuente */
-    -fx-padding: 10px 20px; /* Espaciado interno */
-    -fx-min-width: 60px; /* Ancho mínimo */
-    -fx-min-height: 60px; /* Altura mínima */
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
 }
 
-/* Estilos para los botones de operaciones */
+
 .operation-button {
-    -fx-background-color: #ff6666; /* Color de fondo (rojo claro) */
-    -fx-border-color: #cc0000; /* Color del borde (rojo medio) */
+    -fx-background-color: #ff6666;
+    -fx-border-color: #cc0000;
 }
 
-/* Estilos para los botones de números */
+
 .number-button {
-    -fx-background-color: #ff9999; /* Color de fondo (rojo claro) */
-    -fx-border-color: #cc0000; /* Color del borde (rojo medio) */
-    -fx-text-fill: black; /* Color del texto (negro) */
+    -fx-background-color: #ff9999;
+    -fx-border-color: #cc0000;
+    -fx-text-fill: black;
 }
 
-/* Estilos para los botones cuando se les pasa el mouse */
 .button:hover {
-    -fx-background-color: #ffcccc; /* Cambiar color de fondo al pasar el mouse (rojo más claro) */
+    -fx-background-color: #ffcccc;
 }

@@ -1,0 +1,28 @@
+.error-window {
+    -fx-background-color: #ffcccc;
+    -fx-padding: 20px;
+    -fx-border-color: #cc0000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+
+.error-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #8b0000;
+}
+
+
+.error-button {
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: #ff6666;
+    -fx-text-fill: white;
+    -fx-border-color: #cc0000;
+}
+
+
+.thanks-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}

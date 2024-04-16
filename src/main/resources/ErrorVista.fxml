@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id="ventanaError" alignment="CENTER" prefHeight="200" prefWidth="400" spacing="10"
+      styleClass="error-window" stylesheets="@styles/error.css" xmlns="http://javafx.com/javafx/21"
+      fx:controller="org.alvarowau.Controller.ErrorController">
+
+    <!-- Etiqueta para mostrar el mensaje de error -->
+    <Label fx:id="mensajeLabel" text="Mensaje de error" wrapText="true" styleClass="error-label"/>
+
+    <!-- Botón para cerrar la ventana de alerta -->
+    <Button onAction="#cerrarVentana" styleClass="error-button" text="Cerrar"/>
+
+    <!-- Mensaje de agradecimiento -->
+    <Label text="Gracias por trabajar con la calculadora de Álvaro Bajo" styleClass="thanks-label"/>
+
+</VBox>
