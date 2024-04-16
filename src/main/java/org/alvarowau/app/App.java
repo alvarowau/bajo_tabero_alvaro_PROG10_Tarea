@@ -1,4 +1,4 @@
-package org.alvarowau;
+package org.alvarowau.app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +16,7 @@ import org.alvarowau.util.Path;
  * @version 1.0
  * @since 16 de abril de 2024
  */
-public class Main extends Application {
+public class App extends Application {
 
     /**
      * Método principal de la aplicación.
@@ -24,9 +24,7 @@ public class Main extends Application {
      *
      * @param args Argumentos de la línea de comandos (no se utilizan en esta aplicación)
      */
-    public static void main(String[] args) {
-        launch(args);
-    }
+
 
     /**
      * Método start de la aplicación JavaFX.

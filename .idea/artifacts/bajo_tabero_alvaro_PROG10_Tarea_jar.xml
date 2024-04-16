@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bajo_tabero_alvaro_PROG10_Tarea:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/bajo_tabero_alvaro_PROG10_Tarea_jar</output-path>
+    <root id="archive" name="bajo_tabero_alvaro_PROG10_Tarea.jar">
+      <element id="module-output" name="bajo_tabero_alvaro_PROG10_Tarea" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/23-ea+3/javafx-graphics-23-ea+3-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/23-ea+3/javafx-controls-23-ea+3-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/23-ea+3/javafx-fxml-23-ea+3-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/23-ea+3/javafx-base-23-ea+3-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/23-ea+3/javafx-graphics-23-ea+3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/23-ea+3/javafx-controls-23-ea+3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/23-ea+3/javafx-base-23-ea+3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/23-ea+3/javafx-fxml-23-ea+3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
